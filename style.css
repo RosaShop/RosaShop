@@ -346,4 +346,83 @@ main {
   margin-bottom: 10px;
 }
 
+.garantias-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 60px;
+}
 
+.garantia-flip-card {
+  background: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.garantia-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.garantia-flip-card:hover .garantia-inner {
+  transform: rotateY(180deg);
+}
+
+.garantia-front, .garantia-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  border-radius: 15px;
+  backface-visibility: hidden;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 0 25px rgba(255, 0, 200, 0.2);
+  background: linear-gradient(135deg, rgba(255,0,150,0.1), rgba(255,255,255,0.02));
+  border: 1.5px solid #ff00cc99;
+  backdrop-filter: blur(6px);
+}
+
+.garantia-front {
+  font-size: 1.2rem;
+}
+
+.garantia-back {
+  transform: rotateY(180deg);
+  font-size: 1rem;
+}
+
+.footer-garantia {
+  margin-top: 12px;
+  color: #ff99cc;
+  font-size: 0.85rem;
+}
+
+#boton-musica {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #ff00cc;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  padding: 14px 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 20px #ff00ccaa;
+  transition: transform 0.2s ease, background 0.3s ease;
+  z-index: 10;
+}
+
+#boton-musica:hover {
+  background-color: #ff33dd;
+  transform: scale(1.1);
+}
