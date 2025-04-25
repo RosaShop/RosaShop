@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vouchs - Rosa Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <div class="sidebar">
+    <img src="logo.gif" alt="Logo Rosa" class="logo" />
+    <nav>
+      <a href="index.html">🏠 Inicio</a>
+    </nav>
+  </div>
+
+  <main>
+    <section class="vouchs-section" id="vouchs">
+      <h2>💬 Vouchs de Clientes <span id="contador-vouchs">(0)</span></h2>
+
+      <!-- Carrusel animado -->
+      <div class="vouchs-carousel-wrapper">
+        <div class="vouchs-carousel" id="vouchs-carousel">
+          <!-- JS insertará los vouchs -->
+        </div>
+      </div>
+
+      <!-- Formulario de vouch -->
+      <div class="vouch-form-container">
+        <form id="vouch-form">
+          <input type="text" id="nombre" placeholder="Tu nombre" required />
+          <textarea id="mensaje" placeholder="Tu experiencia" required></textarea>
+          <button type="submit">Enviar Vouch</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
