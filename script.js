@@ -143,4 +143,3 @@ particlesJS('particles-js', {
     document.getElementById('nombre').value = '';
     document.getElementById('mensaje').value = '';
   });
-  
