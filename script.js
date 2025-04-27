@@ -89,7 +89,7 @@ particlesJS('particles-js', {
     cargarVouchs();
   
     // 3. Enviar a Discord por webhook
-    const webhookURL = 'https://discord.com/api/webhooks/1363393820976353420/GTrRaE5GklB8ZaqdqzlXcv6o_PfTHjKrEX5B6aW69f1-Pm0QWnmQ4MmonmLz91gYUKTa';
+    const webhookURL = 'https://discord.com/api/webhooks/1365844755258282065/yex12GkpxREZq7-KPTKy8N8eYCNk9H5UMhKi9KMGxBObLzSgMx0ih4drW0hc9nCJtT7A';
   
     const data = {
       username: 'Vouch Rosa Web',
